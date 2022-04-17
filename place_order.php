@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include('./cart.php');
 
 function add_order($user_id, $cart, $full_name, $address, $total) {
@@ -18,6 +20,7 @@ function add_order($user_id, $cart, $full_name, $address, $total) {
 		'full_name' => $full_name,
 		'address' => $address,
 		'total' => $total,
+		'cart' => $cart,
 	);
 	$db[] = $array;
 	file_put_contents('orders.db', serialize($db));

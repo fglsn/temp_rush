@@ -27,5 +27,5 @@ file_put_contents($filename, serialize($array));
 if ($_SESSION['admin'])
 	return;
 include('logout.php');
-header("Location: login.html");
+header("Location: ./templates/login.html");
 ?>

@@ -20,7 +20,7 @@ echo '
 				<h1>Hive<span id="light">Paint Factory</span></h1>
 			</div>
 			<div class="drop">
-				<a class="navspan" href="./templates/basket.html">Basket</a>
+				<a class="navspan" href="./cart.php">Basket</a>
 			</div>
 			<div class="drop">
 				<a class="navspan" href="./templates/login.html">Login</a>

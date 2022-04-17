@@ -139,6 +139,21 @@
 		</div>
 	</div>
 </div>
-	</main>
-</body>
 
+<h3>Category management</h3>
+<div class="first-section flex-container" id="flex_forms">
+	<div class="forms">
+		<div class="banner-text flex-container"> 
+			<?php
+				if (file_exists('../orders.db')) {
+					$db = unserialize(file_get_contents('../orders.db'));
+					foreach ($db as $order) {
+						include("./order_desc.php");
+					}
+				}
+			?>
+		</div>
+	</div>
+</div>
+	</main>
+	</body>

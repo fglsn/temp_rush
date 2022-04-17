@@ -56,4 +56,3 @@ if (isset($_POST['categories'])) {
 }
 else
 	list_all();
-echo '</body></html>';
